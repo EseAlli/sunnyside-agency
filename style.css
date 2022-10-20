@@ -46,6 +46,11 @@ nav {
   position: relative;
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
 .header-logo {
   height: 50%;
   max-height: 2rem;
@@ -349,11 +354,16 @@ footer li:hover {
 }
 
 @media (max-width: 768px) {
-  .menu-list {
+  .menu-list.expanded {
     background-color: var(--primary-white);
     color: var(--dark-grayish-blue);
     width: 95%;
     margin: 2.5rem auto;
+  }
+
+  .menu-list.expanded .contact:hover {
+    background-color: hsla(51, 100%, 49%, 0.5);
+    color: black;
   }
 }
 
