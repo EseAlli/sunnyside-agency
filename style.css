@@ -80,6 +80,10 @@ h1::after {
   padding: 2rem 0;
 }
 
+.menu-list li:hover {
+  cursor: pointer;
+}
+
 .menu-list.expanded {
   transform: translateY(0px);
   opacity: 1;
@@ -109,6 +113,11 @@ h1::after {
   background-color: var(--primary-white);
   padding: 1rem 1.75rem;
   border-radius: 25px;
+}
+
+.contact:hover {
+  background-color: hsla(0, 0%, 100%, 0.5);
+  color: var(--primary-white);
 }
 
 main {
@@ -319,9 +328,14 @@ footer ul {
   justify-content: space-evenly;
   width: 100%;
   color: var(--primary-cyan);
-  opacity: 0.4;
+  opacity: 0.7;
   font-family: "Barlow";
   max-width: 300px;
+}
+
+footer li:hover {
+  cursor: pointer;
+  color: var(--primary-white);
 }
 
 .footer-logo {
