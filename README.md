@@ -31,8 +31,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [https://www.frontendmentor.io/solutions/sunnyside-agency-landing-page-pcrZD6-JOY](https://www.frontendmentor.io/solutions/sunnyside-agency-landing-page-pcrZD6-JOY)
+- Live Site URL: [https://esealli.github.io/sunnyside-agency/](https://esealli.github.io/sunnyside-agency/)
 
 ## My process
 
