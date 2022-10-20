@@ -35,6 +35,7 @@ header {
   text-align: center;
   background-size: cover;
   font-family: "Fraunces", serif;
+  position: relative;
 }
 
 nav {
@@ -42,6 +43,7 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: relative;
 }
 
 .header-logo {
@@ -63,10 +65,36 @@ h1::after {
 }
 
 header ul {
-  display: none;
+  /* display: none; */
   align-items: center;
   gap: 3rem;
   font-family: "Barlow", serif;
+  position: absolute;
+  top: 50%;
+  transition: all 0.3s;
+}
+
+header ul.expanded {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  padding: 2rem 0;
+}
+
+.expanded::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  top: -20px;
+  right: 0;
+  border-left: 60px solid transparent;
+  border-right: 0 solid transparent;
+  border-bottom: 50px solid var(--primary-white);
+}
+
+.expanded > .contact {
+  background-color: var(--primary-yellow);
 }
 
 .contact {
@@ -113,6 +141,11 @@ section h2 {
 
 p {
   font-family: "Barlow", sans-serif;
+}
+
+.transform img,
+.stand-out img {
+  width: 100%;
 }
 
 .transform div,
@@ -297,6 +330,15 @@ footer ul {
   margin: 1.5rem 0;
 }
 
+@media (max-width: 768px) {
+  header ul {
+    background-color: var(--primary-white);
+    color: var(--dark-grayish-blue);
+    width: 95%;
+    margin: 2.5rem auto;
+  }
+}
+
 @media (min-width: 600px) {
   header {
     background-image: url(./images/desktop/image-header.jpg);
@@ -361,6 +403,10 @@ footer ul {
 
   .photography {
     background-image: url(./images/desktop/image-photography.jpg);
+  }
+
+  .testimonials {
+    padding: 5rem 1rem;
   }
 
   .testimonies {
